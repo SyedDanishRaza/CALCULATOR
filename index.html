@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator by Danish</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="Calculator">
-        <input type="text" id="screen" readonly>
-        <div class="buton">
-            <button onclick="clickbtn('%')" >%</button>
-            <button onclick="empty('')" class="nothing">Ce</button>
-            <button onclick="delete1val('')" >DEL</button>
-            <button onclick="clickbtn('/')" >/</button>
+        <div class="Calculator">
+            <input type="text" id="calculation" placeholder="0" readonly>
+            <input type="text" id="result" readonly>
+            <div class="buton">
+                <button onclick="empty('')" class="nothing">AC</button>
+                <button class="opt-color-u" onclick="delete1val('')" >C</button>
+                <button class="opt-color-u" onclick="clickbtn('%')" >%</button>
+                <button class="opt-color" onclick="clickbtn('/')" >/</button>
 
-            <button onclick="clickbtn('7')" >7</button>
-            <button onclick="clickbtn('8')" >8</button>
-            <button onclick="clickbtn('9')" >9</button>
-            <button onclick="clickbtn('X')" >X</button>
+                <button onclick="clickbtn('7')" >7</button>
+                <button onclick="clickbtn('8')" >8</button>
+                <button onclick="clickbtn('9')" >9</button>
+                <button class="opt-color" onclick="clickbtn('*')" >X</button>
 
-            <button onclick="clickbtn('4')" >4</button>
-            <button onclick="clickbtn('5')" >5</button>
-            <button onclick="clickbtn('6')" >6</button>
-            <button onclick="clickbtn('-')" >-</button>
+                <button onclick="clickbtn('4')" >4</button>
+                <button onclick="clickbtn('5')" >5</button>
+                <button onclick="clickbtn('6')" >6</button>
+                <button class="opt-color" onclick="clickbtn('-')" >-</button>
 
-            <button onclick="clickbtn('1')" >1</button>
-            <button onclick="clickbtn('2')" >2</button>
-            <button onclick="clickbtn('3')" >3</button>
-            <button onclick="clickbtn('+')" >+</button>
+                <button onclick="clickbtn('1')" >1</button>
+                <button onclick="clickbtn('2')" >2</button>
+                <button onclick="clickbtn('3')" >3</button>
+                <button class="opt-color" onclick="clickbtn('+')" >+</button>
 
-            <button onclick="clickbtn('00')" >00</button>
-            <button onclick="clickbtn('0')" >0</button>
-            <button onclick="clickbtn('.')" >.</button>
-            <button onclick="Answer('=')" class="Ans" >=</button>
+                <button onclick="clickbtn('00')" >00</button>
+                <button onclick="clickbtn('0')" >0</button>
+                <button onclick="clickbtn('.')" >.</button>
+                <button onclick="ans('=')" class="Ans">=</button>
+            </div>
         </div>
-    </div>
+       
 
     <script src="app.js"></script>
 </body>

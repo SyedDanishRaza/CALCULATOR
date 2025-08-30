@@ -14,18 +14,31 @@ body {
     background: #ffffff;
 }
 
-#screen {
-    margin-bottom: 10px;
-    font-size: 20px;
+#calculation{
+    font-size: 18px;
     padding: 5px;
     border: none;
     width: 96%;
-    box-shadow: 1px 1px 5px;
-    height: 50px;
+    outline: none;
+    height: 35px;
     text-align: right;
-    background: #ffffff;
-    border-radius: 3px;
-    color: #000;
+    background: #3a3a3a;
+    border-radius: 3px 3px 0px 0px;
+    color: #ffffff;
+}
+
+#result {
+    margin-bottom: 12px;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 96%;
+    height: 40px;
+    text-align: right;
+    background: #3a3a3a;
+    border-radius: 0px 0px 3px 3px;
+    color: #ffffff;
 }
 
 .buton {
